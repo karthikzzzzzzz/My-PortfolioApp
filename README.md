@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Portfolio App
+
+Welcome to the Portfolio App! This is a personal portfolio application designed to showcase my projects, skills, and achievements. The app is built using React.js and demonstrates various features and functionalities relevant to modern web development.
+
+Features
+
+Project Showcase: Display a list of projects with detailed descriptions, technologies used, and links to GitHub repositories or live demos.
+Skill Highlights: Highlight technical skills and certifications with interactive elements.
+Contact Form: Enable users to get in touch with me via a contact form.
+Responsive Design: Ensure the app looks great on both desktop and mobile devices.
+Technologies Used
+
+React.js: For building the user interface.
+CSS: For styling the components.
+JavaScript: For dynamic content and interactions.
+React Router: For managing application routes.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
