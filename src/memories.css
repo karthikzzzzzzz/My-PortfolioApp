@@ -1,0 +1,84 @@
+.memories-container {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,5,1) 65%, rgba(0,174,255,1) 100%);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.memories-header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.memories-header h1 {
+    font-size: 2.5rem;
+}
+
+.memories-blue-line {
+    width: 380px;
+    height: 4px;
+    background-color: #3ba4ff;
+    margin: 10px auto;
+}
+
+
+.memories-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center; 
+}
+
+.memories-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memories-project-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px; 
+}
+
+.memories-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.memories-project-info-outside {
+    text-align: center;
+}
+
+.memories-project-info-outside h2 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2rem;
+    color:#00aeff;
+}
+
+.memories-project-info-outside p {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+
+.memories-portfolio-year p:first-child {
+    font-size: 1.5rem;
+}
+
+.memories-portfolio-year p:last-child {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}

@@ -1,0 +1,223 @@
+.profile-container {
+    padding: 2rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,5,1) 65%, rgba(0,174,255,1) 100%);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap; 
+  }
+  
+  .intro-text {
+    flex: 1;
+    margin-right: 2rem;
+    min-width: 300px;
+  }
+  .intro-text hr{
+    width: 100%;
+    max-width: 220px;
+    height: 4px;
+    background-color: #00aeff;
+    border: none;
+    margin: 10px 0;
+  }
+  
+  .intro-image {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+ .highlight {
+  color:#00aeff;
+ }
+  
+  .name-highlight {
+    color: #00aeff;
+    font-weight: bold;
+  }
+  
+  .activities-section {
+    margin-top: 2rem;
+  }
+  
+  .activities-list {
+    list-style-type: none;
+    font-size: 1.2rem;
+  }
+  
+  .activities-list li {
+    margin: 0.5rem 0;
+  }
+  
+  .quote {
+    margin-top: 2rem;
+    font-style: italic;
+  }
+  
+  .skillset-section {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .skill-button {
+    background-color: #2a2a2a;
+    border: 2px solid #00aeff;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skill-button:hover {
+    background-color:#00aeff;
+    color: #0e0e0e;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(165, 143, 247, 0.6);
+  }
+  
+  .skill-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: all 0.3s ease;
+  }
+  
+  .skill-button:hover:before {
+    left: 100%;
+  }
+  
+  .skill-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+ 
+  @media (max-width: 1200px) {
+    .intro-section, .intro-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .intro-text {
+      text-align: center;
+      margin-right: 0;
+    }
+  
+    .skillset-section {
+      margin-top: 2rem;
+    }
+  
+    .skills-buttons {
+      gap: 0.5rem;
+    }
+  
+    .skill-button {
+      padding: 0.8rem 1.6rem;
+      font-size: 1.1rem;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .intro-text {
+      margin-right: 0;
+      text-align: center;
+      min-width: auto;
+    }
+  
+    .skills-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .skill-button {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .intro-image {
+      margin-top: 1rem;
+    }
+  
+    .intro-image img {
+      max-width: 80%;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .skill-button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+  
+    .activities-list {
+      font-size: 1rem;
+    }
+  }
+  .resume-button {
+    background-color: #00aeff; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .resume-button:hover {
+    background-color: #00aeff; 
+  }
+  
+  

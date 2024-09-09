@@ -1,0 +1,72 @@
+
+
+
+.certifications-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 40px 0 0px;
+  
+  color: white;
+   
+  font-family: 'Poppins', sans-serif;
+}
+.highlight{
+  color: #00aeff;
+  
+}
+
+.scroll-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin-top: -80px;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+   
+  }
+  
+  
+  .projects {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 30px;       
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  
+  .project-item {
+    width: 300px;
+    height: 450px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+    flex-shrink: 0; 
+    flex-grow: 0;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+      color:#00aeff;
+    }
+  }
+  
+
+  .project-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+ 
+  
+ 
+  
