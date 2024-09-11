@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './animation.css'
 const useRotatingText = () => {
   useEffect(() => {
-    const texts = ['Full Stack Developer','Software Developer', 'ML Enthusiast', 'Frontend Engineer'];
+    const texts = ['Full Stack Developer', 'ML Enthusiast',];
     const element = document.querySelector('.rotating-text');
     let index = 0;
 
