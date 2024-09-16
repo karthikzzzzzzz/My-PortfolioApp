@@ -25,7 +25,7 @@ const Profile = () => {
               <h3>Apart from coding, some other activities that I love to do!</h3>
               <ul className="activities-list">
                 <li>🎮 Playing Games</li>
-                <li>✍️ Playing Cricket</li>
+                <li>🏏Playing Cricket</li>
                 <li>🌍 Travelling</li>
               </ul>
             </div>
