@@ -33,7 +33,7 @@ const Profile = () => {
             
             <div className="resume-section">
               <a
-                href="/newResume.pdf"
+                href="/KarthikResume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume-button"
