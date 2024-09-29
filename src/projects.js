@@ -3,6 +3,7 @@ import "./projects.css";
 import img1 from '../src/Screenshot 2024-09-09 at 11.11.51 PM.png'
 import img2 from '../src/Screenshot 2024-09-09 at 4.57.28 PM.png'
 import img3 from '../src/Screenshot 2024-09-09 at 11.19.57 PM.png'
+import img4 from '../src/Screenshot 2024-09-29 at 11.52.29 AM.png'
 
 
 const Projects = () => {
@@ -31,6 +32,15 @@ const Projects = () => {
       githubLink: "https://github.com/karthikzzzzzzz/tic-tac-toe",
       demoLink: "https://main--tic-tac-toezz.netlify.app",
     },
+    {
+      title: "Movie-Booking UI System",
+      description:
+        "Designed and developed a responsive user interface focusing on user-friendly navigation & movie listings using AngularJS,HTML and CSS",
+      imgSrc:img4,
+      githubLink: "https://github.com/karthikzzzzzzz/Movie-ticket-booking",
+      demoLink: "https://movieticketingbooking.netlify.app/",
+    },
+    
    
  
   ];
