@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Click here to view the Portfolio
+https://master--portfolio-appz21.netlify.app
+
+
 Portfolio App
 
 Welcome to the Portfolio App! This is a personal portfolio application designed to showcase my projects, skills, and achievements. The app is built using React.js and demonstrates various features and functionalities relevant to modern web development.
