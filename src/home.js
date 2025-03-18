@@ -16,7 +16,7 @@ const Home = () => {
         <div className="content">
           <h1>Hello <span role="img" aria-label="wave">👋</span></h1>
           <h2>I'M <span className="highlight">KARTHIK RAJAN S</span></h2>
-          <p><span className="highlight rotating-text">Frontend Developer</span></p>
+          <p><span className="highlight rotating-text">AI Engineer</span></p>
 
         </div>
         <div className="hero-image">
@@ -31,12 +31,14 @@ const Home = () => {
           <div className="about-text">
             <h2>LET ME <span className="highlight">INTRODUCE</span> MYSELF</h2>
             <p>
-            My aim is to secure a challenging position as a Software engineer in a dynamic organization that values innovation, creativity, teamwork and where I can, utilize my knowledge and skills to contribute to the success of the organization 
+            I am a passionate and results-driven <strong className='highlight'>software engineer</strong> with a strong foundation in <strong className='highlight'>Artificial Intelligence, Machine Learning, and Full Stack Development</strong>. I thrive in dynamic environments that foster innovation, creativity, and teamwork. 
             </p>
-            <p>I am familiar in languages like <strong>Python, Javascript, and Java and exploring day by day</strong>.</p>
-            <p>I would love to work in the fields of <strong>Web Technologies and Full Stack Development</strong> as well as exploring <strong>Machine Learning</strong>.</p>
+            
+            <p>With expertise in Python, JavaScript, and Java, I continuously expand my technical skill set, focusing on AI-driven solutions, modern web technologies, and scalable software systems. My certifications, including <strong className='highlight'>AWS Certified AI Practitioner, Microsoft Certified Azure AI Engineer Associate, and Azure AI Fundamentals</strong>, validate my commitment to staying at the forefront of AI advancements.
+
+</p>
             <p>
-              I apply my passion for developing products with <strong>Machine Learning</strong> and modern JavaScript libraries like <strong>React.js and AngularJs</strong>.
+            I am actively seeking opportunities as a <strong className='highlight'>Software Engineer </strong>where I can leverage my AI expertise, problem-solving skills, and passion for building intelligent, user-centric applications that make a meaningful impact.
             </p>
           </div>
 

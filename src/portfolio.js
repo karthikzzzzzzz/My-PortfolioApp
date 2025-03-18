@@ -33,7 +33,7 @@ const Profile = () => {
             
             <div className="resume-section">
               <a
-                href="/mine.pdf"
+                href="/Karthik-Rajan-s.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume-button"
@@ -55,7 +55,6 @@ const Profile = () => {
           <button className="skill-button">C++</button>
           <button className="skill-button">JavaScript</button>
           <button className="skill-button">TypeScript</button>
-          <button className="skill-button">Node.js</button>
           <button className="skill-button">React</button>
           <button className="skill-button">ReactNative</button>
           <button className="skill-button">Firebase</button>
@@ -65,6 +64,14 @@ const Profile = () => {
           <button className="skill-button">MYSQL</button>
           <button className="skill-button">Python</button>
           <button className="skill-button">Java</button>
+          <button className="skill-button">Langchain</button>
+          <button className="skill-button">LLM</button>
+          <button className="skill-button">VectorDB</button>
+          <button className="skill-button">GenAI</button>
+          <button className="skill-button">Azure</button>
+          <button className="skill-button">Docker</button>
+          <button className="skill-button">AWS</button>
+          <button className="skill-button">RestAPI</button>
         </div>
       </div>
 

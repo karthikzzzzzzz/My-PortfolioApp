@@ -1,22 +1,52 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './topbar.css'; 
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Drawer, List, ListItem, ListItemText, IconButton } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import "./topbar.css";
 
 const Topbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleDrawer = (state) => () => {
+    setOpen(state);
+  };
+
   return (
     <div className="topbar">
       <div className="logo">
-        <h1>My Portfolio</h1> 
+        <h1>My Portfolio</h1>
       </div>
-      <div className="nav-links">
-        <Link to="/" className="nav-button">Home</Link>
-        <Link to="/portfolio" className="nav-button">About</Link>
-        <Link to="/experience" className="nav-button">Education</Link>
-        <Link to="/projects" className="nav-button">Projects</Link>
-        <Link to="/certifications" className="nav-button">Certifications</Link>
-        <Link to="/memories" className="nav-button">Achievement</Link>
-       
-      </div>
+      
+      <IconButton onClick={toggleDrawer(true)} className="menu-icon">
+        <MenuIcon/>
+        <span className="menu-caption">📌</span>
+      </IconButton>
+
+     
+      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+        <List className="drawer-list">
+          <ListItem button component={Link} to="/" onClick={toggleDrawer(false)}>
+            <ListItemText primary="Home" />
+          </ListItem>
+          <ListItem button component={Link} to="/portfolio" onClick={toggleDrawer(false)}>
+            <ListItemText primary="About" />
+          </ListItem>
+          <ListItem button component={Link} to="/experience" onClick={toggleDrawer(false)}>
+            <ListItemText primary="Education" />
+          </ListItem>
+          <ListItem button component={Link} to="/projects" onClick={toggleDrawer(false)}>
+            <ListItemText primary="Projects" />
+          </ListItem>
+          <ListItem button component={Link} to="/certifications" onClick={toggleDrawer(false)}>
+            <ListItemText primary="Certifications" />
+          </ListItem>
+          <ListItem button component={Link} to="/memories" onClick={toggleDrawer(false)}>
+            <ListItemText primary="Achievement" />
+          </ListItem>
+        </List>
+      </Drawer>
+
+      
     </div>
   );
 };

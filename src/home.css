@@ -6,7 +6,7 @@ html, body {
   }
   
   body {
-    background: rgb(0,0,0);
+    background: rgb(240, 242, 242);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,5,1) 65%, rgba(0,174,255,1) 100%);
     color: #fff;
     font-family: 'Arial', sans-serif;

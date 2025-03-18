@@ -9,6 +9,10 @@ const Experience = () => {
         <hr />
         <h2>Internship Programme</h2>
         <p>
+        Data Science Intern @Signa Tech Services Pvt Ltd, contributing to working with the LLM applications and developing a standalone web 
+        application that leverages OpenAI models
+        </p>
+        <p>
           Global Academic Internship Programme on 'Data Analytics using Big Data' in association 
           with School of Computing @ National University of Singapore (NUS) and Amazon (AWS)
 
