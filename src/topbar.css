@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,5,1) 65%, rgba(0,174,255,1) 100%);
-  padding: 20px 30px;
+  padding: 15px 20px;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  min-height: 60px;
 }
 
 .logo {
@@ -30,7 +31,7 @@
 .logo h1 {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem; 
+  font-size: 1.1rem; 
   font-weight: 700;   
   letter-spacing: 0.08em;
   margin: 0;
@@ -47,37 +48,509 @@
 }
 
 .menu-icon {
-  color: red;
-  font-size: 2rem !important;
-  cursor: pointer;
+  background: linear-gradient(135deg, rgba(0, 174, 255, 0.2), rgba(102, 126, 234, 0.2)) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+  min-width: 60px !important;
+  min-height: 60px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.menu-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.menu-icon:hover::before {
+  left: 100%;
+}
+
+.menu-icon:hover {
+  background: linear-gradient(135deg, rgba(0, 174, 255, 0.5), rgba(102, 126, 234, 0.5)) !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 12px 35px rgba(0, 174, 255, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.menu-icon:active {
+  transform: translateY(-1px) scale(0.98) !important;
+  box-shadow: 0 6px 20px rgba(0, 174, 255, 0.6) !important;
+  background: linear-gradient(135deg, rgba(0, 174, 255, 0.6), rgba(102, 126, 234, 0.6)) !important;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hamburger-line {
+  width: 24px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffffff, #00aeff);
+  border-radius: 3px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.hamburger-line:nth-child(1) {
+  transform-origin: center;
+}
+
+.hamburger-line:nth-child(2) {
+  transform-origin: center;
+}
+
+.hamburger-line:nth-child(3) {
+  transform-origin: center;
+}
+
+.menu-icon:hover .hamburger-line {
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+.menu-icon:hover .hamburger-line:nth-child(1) {
+  transform: scale(1.1);
+}
+
+.menu-icon:hover .hamburger-line:nth-child(2) {
+  transform: scale(1.1);
+}
+
+.menu-icon:hover .hamburger-line:nth-child(3) {
+  transform: scale(1.1);
+}
+
+.menu-caption {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.menu-icon:hover .menu-caption {
+  color: #ffffff;
+  transform: translateY(-2px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile-First Responsive Design */
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .topbar {
+    padding: 20px 30px;
+    min-height: 70px;
+  }
+  
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+  
+  .menu-icon {
+    min-width: 55px !important;
+    min-height: 55px !important;
+    padding: 14px 18px !important;
+  }
+  
+  .hamburger-line {
+    width: 22px;
+    height: 2.5px;
+  }
+  
+  .menu-caption {
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .topbar {
+    padding: 20px 40px;
+    min-height: 80px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .menu-icon {
+    min-width: 60px !important;
+    min-height: 60px !important;
+    padding: 16px 20px !important;
+  }
+  
+  .hamburger-line {
+    width: 24px;
+    height: 3px;
+  }
+  
+  .menu-caption {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .topbar {
+    padding: 12px 15px;
+    min-height: 55px;
+  }
+  
+  .logo h1 {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .menu-icon {
+    min-width: 45px !important;
+    min-height: 45px !important;
+    padding: 10px 14px !important;
+    border-radius: 12px !important;
+  }
+  
+  .hamburger-line {
+    width: 18px;
+    height: 2px;
+  }
+  
+  .menu-caption {
+    font-size: 0.6rem;
+    letter-spacing: 0.6px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .topbar {
+    padding: 10px 12px;
+    min-height: 50px;
+  }
+  
+  .logo h1 {
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+  }
+  
+  .menu-icon {
+    min-width: 40px !important;
+    min-height: 40px !important;
+    padding: 8px 12px !important;
+    border-radius: 10px !important;
+  }
+  
+  .hamburger-line {
+    width: 16px;
+    height: 1.5px;
+  }
+  
+  .menu-caption {
+    font-size: 0.55rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Enhanced Drawer Styling - Keeping Original Colors */
+.MuiDrawer-paper {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,5,1) 65%, rgba(0,174,255,1) 100%) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+  width: 320px !important;
+  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.5) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+
+/* Force right-side positioning */
+.MuiDrawer-root[data-anchor="right"] .MuiDrawer-paper {
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+}
+
+/* Ensure drawer opens from right */
+.MuiDrawer-root[data-anchor="right"] .MuiDrawer-paperAnchorRight {
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+}
+
+/* Specific right drawer styling */
+.drawer-paper-right {
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+  position: fixed !important;
+}
+
+/* Override any left positioning */
+.MuiDrawer-paperAnchorLeft {
+  display: none !important;
+}
+
+/* Force right anchor */
+.MuiDrawer-paperAnchorRight {
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+}
+
+.MuiDrawer-paper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 174, 255, 0.5), transparent);
+  z-index: 1;
 }
 
 .drawer-list {
-  width: 250px;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,5,1) 65%, rgba(0,174,255,1) 100%);
-  height: 100%;
-  color: white;
-  padding-top: 20px;
-}
-
-.drawer-list .MuiListItemText-primary {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: white;
+  background: transparent !important;
+  padding: 2rem 0 !important;
+  margin-top: 1rem !important;
+  width: 100% !important;
 }
 
 .drawer-list .MuiListItem-root {
-  padding: 12px 20px;
-  
+  margin: 0.5rem 1.5rem !important;
+  border-radius: 16px !important;
+  padding: 16px 20px !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: calc(100% - 3rem) !important;
+  box-sizing: border-box !important;
+}
+
+.drawer-list .MuiListItem-root::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 174, 255, 0.4), transparent);
+  transition: left 0.6s ease;
+  z-index: 0;
+}
+
+.drawer-list .MuiListItem-root:hover::before {
+  left: 100%;
 }
 
 .drawer-list .MuiListItem-root:hover {
-  background: #00aeff
+  background: rgba(0, 174, 255, 0.25) !important;
+  transform: translateX(8px) scale(1.02) !important;
+  border-color: rgba(0, 174, 255, 0.5) !important;
+  box-shadow: 0 8px 25px rgba(0, 174, 255, 0.4) !important;
 }
 
 .drawer-list .MuiListItem-root:active {
-  background: #00aeff;
+  transform: translateX(4px) scale(0.98) !important;
+  background: rgba(0, 174, 255, 0.35) !important;
+  border-color: rgba(0, 174, 255, 0.6) !important;
+  box-shadow: 0 4px 15px rgba(0, 174, 255, 0.5) !important;
+}
+
+.drawer-list .MuiListItemText-primary {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+  transition: all 0.2s ease !important;
+  position: relative !important;
+  z-index: 1 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.drawer-list .MuiListItem-root:hover .MuiListItemText-primary {
+  color: #ffffff !important;
+  transform: translateX(5px) !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Enhanced Drawer Animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.MuiDrawer-paper {
+  animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform-origin: right !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Ensure proper right-side animation */
+.MuiDrawer-root[data-anchor="right"] .MuiDrawer-paper {
+  animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform-origin: right !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth closing animation */
+.MuiDrawer-root:not(.MuiDrawer-modal) .MuiDrawer-paper {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Ensure content disappears with drawer */
+.MuiDrawer-root:not(.MuiDrawer-modal) .drawer-list {
+  transition: opacity 0.2s ease !important;
+}
+
+/* Hide content immediately when drawer starts closing */
+.MuiDrawer-root:not(.MuiDrawer-modal) .MuiDrawer-paper:not(.MuiDrawer-paperAnchorRight) .drawer-list {
+  opacity: 0 !important;
+  transition: opacity 0.1s ease !important;
+}
+
+/* Force right positioning with higher specificity */
+div[role="presentation"] .MuiDrawer-paper {
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+}
+
+/* Override any conflicting styles */
+.MuiBackdrop-root + .MuiDrawer-paper {
+  right: 0 !important;
+  left: auto !important;
+  transform: translateX(0) !important;
+}
+
+/* Responsive Drawer Design */
+
+/* Desktop Drawer */
+@media (min-width: 1024px) {
+  .MuiDrawer-paper {
+    width: 350px !important;
+  }
+  
+  .drawer-list .MuiListItem-root {
+    margin: 0.6rem 2rem !important;
+    padding: 18px 24px !important;
+    width: calc(100% - 4rem) !important;
+  }
+  
+  .drawer-list .MuiListItemText-primary {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Tablet Drawer */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .MuiDrawer-paper {
+    width: 320px !important;
+  }
+  
+  .drawer-list .MuiListItem-root {
+    margin: 0.5rem 1.5rem !important;
+    padding: 16px 20px !important;
+    width: calc(100% - 3rem) !important;
+  }
+  
+  .drawer-list .MuiListItemText-primary {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Mobile Drawer */
+@media (max-width: 767px) {
+  .MuiDrawer-paper {
+    width: 280px !important;
+  }
+  
+  .drawer-list .MuiListItem-root {
+    margin: 0.4rem 1rem !important;
+    padding: 14px 18px !important;
+    width: calc(100% - 2rem) !important;
+  }
+  
+  .drawer-list .MuiListItemText-primary {
+    font-size: 1rem !important;
+  }
+}
+
+/* Small Mobile Drawer */
+@media (max-width: 480px) {
+  .MuiDrawer-paper {
+    width: 260px !important;
+  }
+  
+  .drawer-list .MuiListItem-root {
+    margin: 0.3rem 0.8rem !important;
+    padding: 12px 16px !important;
+    width: calc(100% - 1.6rem) !important;
+  }
+  
+  .drawer-list .MuiListItemText-primary {
+    font-size: 0.95rem !important;
+  }
 }
 
 @media (min-width: 768px) {

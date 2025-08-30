@@ -18,12 +18,26 @@ const Topbar = () => {
       </div>
       
       <IconButton onClick={toggleDrawer(true)} className="menu-icon">
-        <MenuIcon/>
-        <span className="menu-caption">📌</span>
+        <div className="hamburger-menu">
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </div>
       </IconButton>
 
      
-      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+      <Drawer 
+        anchor="right" 
+        open={open} 
+        onClose={toggleDrawer(false)}
+        variant="temporary"
+        ModalProps={{
+          keepMounted: true
+        }}
+        PaperProps={{
+          className: 'drawer-paper-right'
+        }}
+      >
         <List className="drawer-list">
           <ListItem button component={Link} to="/" onClick={toggleDrawer(false)}>
             <ListItemText primary="Home" />

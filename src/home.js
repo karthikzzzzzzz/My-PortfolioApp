@@ -31,14 +31,18 @@ const Home = () => {
           <div className="about-text">
             <h2>LET ME <span className="highlight">INTRODUCE</span> MYSELF</h2>
             <p>
-            I am a passionate and results-driven <strong className='highlight'>software engineer</strong> with a strong foundation in <strong className='highlight'>Artificial Intelligence, Machine Learning, and Full Stack Development</strong>. I thrive in dynamic environments that foster innovation, creativity, and teamwork. 
+            Hello! I'm Karthik Rajan, a passionate and results-driven <strong className='highlight'>Software Engineer</strong> specializing in <strong className='highlight'>Artificial Intelligence, Machine Learning, and Full Stack Development</strong>.
             </p>
             
-            <p>With expertise in Python, JavaScript, and Java, I continuously expand my technical skill set, focusing on AI-driven solutions, modern web technologies, and scalable software systems. My certifications, including <strong className='highlight'>AWS Certified AI Practitioner, Microsoft Certified Azure AI Engineer Associate, and Azure AI Fundamentals</strong>, validate my commitment to staying at the forefront of AI advancements.
-
-</p>
             <p>
-            I am actively seeking opportunities as a <strong className='highlight'>Software Engineer </strong>where I can leverage my AI expertise, problem-solving skills, and passion for building intelligent, user-centric applications that make a meaningful impact.
+            With a strong foundation in <strong className='highlight'>Python, and AI/ML</strong>, I'm dedicated to creating innovative, AI-powered solutions and scalable web applications. Whether it's developing intelligent systems or building modern web technologies, I strive to deliver user-centric applications that make a tangible impact.
+            </p>
+            
+            <p>I'm certified as an <strong className='highlight'>AWS Certified AI Practitioner, Microsoft Certified Azure AI Engineer Associate, and Azure AI Fundamentals</strong>, which reflect my commitment to continuous learning in the AI space.
+            </p>
+            <p>
+            If you’re looking for a driven engineer with a deep technical skill set and a focus on AI, I’d love to collaborate and contribute to your projects.
+            Feel free to connect with me via LinkedIn to discuss how we can build the future together.
             </p>
           </div>
 

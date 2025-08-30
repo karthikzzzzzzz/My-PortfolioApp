@@ -57,6 +57,20 @@
  .highlight {
   color:#00aeff;
  }
+
+ .company-link {
+  color: #00aeff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+ }
+
+ .company-link:hover {
+  color: #ffffff;
+  border-bottom: 1px solid #00aeff;
+  text-shadow: 0 0 8px rgba(0, 174, 255, 0.5);
+ }
   
   .name-highlight {
     color: #00aeff;
@@ -95,24 +109,29 @@
   }
   
   .skill-button {
-    background-color: #2a2a2a;
-    border: 2px solid #00aeff;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .skill-button:hover {
-    background-color:#00aeff;
-    color: #0e0e0e;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(165, 143, 247, 0.6);
-  }
+  background-color: #2a2a2a;
+  border: 2px solid #00aeff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+.skill-button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-button:hover {
+  background-color: #00aeff;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 174, 255, 0.4);
+}
   
   .skill-button:before {
     content: '';
@@ -162,47 +181,120 @@
   
 
   @media (max-width: 768px) {
-    .intro-text {
-      margin-right: 0;
-      text-align: center;
-      min-width: auto;
-    }
-  
-    .skills-buttons {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  
-    .skill-button {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-  
-    .intro-image {
-      margin-top: 1rem;
-    }
-  
-    .intro-image img {
-      max-width: 80%;
-    }
+  .profile-container {
+    padding: 1rem;
   }
+
+  .intro-section {
+    margin-bottom: 2rem;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .intro-text {
+    margin-right: 0;
+    text-align: center;
+    min-width: auto;
+    width: 100%;
+    order: 2;
+  }
+
+  .intro-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .intro-image {
+    margin-top: 0;
+    order: 1;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .intro-image img {
+    max-width: 60%;
+    height: auto;
+  }
+
+  .skillset-section {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .skillset-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .skill-button {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .resume-button {
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
   
 
   @media (max-width: 480px) {
-    .title {
-      font-size: 2rem;
-    }
-  
-    .skill-button {
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-    }
-  
-    .activities-list {
-      font-size: 1rem;
-    }
+  .profile-container {
+    padding: 0.8rem;
   }
+
+  .intro-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text p {
+    font-size: 0.9rem;
+  }
+
+  .skillset-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .skill-button {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    max-width: 260px;
+  }
+
+  .resume-button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    max-width: 260px;
+  }
+
+  .intro-image img {
+    max-width: 70%;
+  }
+}
   .resume-button {
     background-color: #00aeff; 
     color: white;
