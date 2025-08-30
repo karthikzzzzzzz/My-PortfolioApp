@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Drawer, List, ListItem, ListItemText, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import "./topbar.css";
 
 const Topbar = () => {
