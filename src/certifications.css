@@ -66,6 +66,87 @@
     border-radius: 10px;
     margin-bottom: 15px;
   }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .certifications-title {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+
+  .scroll-container {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    margin-top: -60px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: visible;
+    overflow-y: auto;
+  }
+
+  .project-item {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 400px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .project-image {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+
+  .project-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .project-item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .certifications-title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+
+  .scroll-container {
+    padding: 5px;
+    margin-top: -40px;
+  }
+
+  .project-item {
+    max-width: 280px;
+    padding: 12px;
+    min-height: 350px;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-item p {
+    font-size: 0.85rem;
+  }
+}
  
   
  
